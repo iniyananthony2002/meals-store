@@ -25,6 +25,7 @@ class _MealDetailsScreenState extends State<MealDetailsScreen> {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
         content: Text('$mealTitle $content your favorite list'),
+        showCloseIcon: true,
         duration: const Duration(seconds: 3),  
         backgroundColor: Theme.of(context).indicatorColor,
       ),
